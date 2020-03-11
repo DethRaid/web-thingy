@@ -1,6 +1,6 @@
-/// API keys are uwu
-///
-/// They can only be generated through the admin panel
+//! API keys are uwu
+//!
+//! They can only be generated through the admin panel
 
 struct ApiKey(String);
 
