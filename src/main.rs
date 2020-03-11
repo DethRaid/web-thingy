@@ -2,6 +2,8 @@
 
 use rocket::{routes, get};
 
+mod images;
+
 #[get("/")]
 fn index() -> &'static str {
     "Hello world, stranger!"
@@ -13,5 +15,8 @@ fn name(name: String) -> String {
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![index, name]).launch();
+    rocket::ignite()
+        .mount("/", routes![index, name])
+        .mount("/images", routes![images::get_image])
+        .launch();
 }
