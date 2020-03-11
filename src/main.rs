@@ -2,6 +2,8 @@
 
 use rocket::{routes, get};
 
+mod admin;
+mod auth;
 mod images;
 
 #[get("/")]
