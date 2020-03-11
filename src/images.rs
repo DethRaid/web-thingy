@@ -1,4 +1,4 @@
-use rocket::{get};
+use rocket::get;
 
 /// Gets the image with the specified ID
 ///

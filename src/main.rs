@@ -1,6 +1,6 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
-use rocket::{routes, get};
+use rocket::{get, routes};
 
 mod admin;
 mod auth;
